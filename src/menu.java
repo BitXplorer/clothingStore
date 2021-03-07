@@ -46,7 +46,7 @@ public class menu {
             int product = getInt();
             System.out.println("Choose product amount: ");
             int amount = getInt();
-            CallableStatements.createOrder(cust_id, paymentMethod, product,amount);
+            DatabaseConnection.createOrder(cust_id, paymentMethod, product,amount);
 
         } else if (input == 2) {
             System.out.println("2. View order.\n");
